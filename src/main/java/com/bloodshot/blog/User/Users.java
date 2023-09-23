@@ -1,4 +1,4 @@
-package User;
+package com.bloodshot.blog.User;
 
 import javax.persistence.*;
 
@@ -8,7 +8,7 @@ public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long Id;
     private String name;
     private String email;
     private String phn;
@@ -20,8 +20,8 @@ public class Users {
     public Users() {
     }
 
-    public Users(int id, String name, String email, String phn, String courseName, String fee, String username, String password) {
-        this.id = id;
+    public Users(int Id, String name, String email, String phn, String courseName, String fee, String username, String password) {
+        this.Id = Id;
         this.name = name;
         this.email = email;
         this.phn = phn;
@@ -31,12 +31,12 @@ public class Users {
         this.password = password;
     }
 
-    public int getId() {
-        return id;
+    public long getId() {
+        return Id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(long Id) {
+        this.Id = Id;
     }
 
     public String getUsername() {
@@ -98,7 +98,7 @@ public class Users {
     @Override
     public String toString() {
         return "Users{" +
-                "id=" + id +
+                "Id=" + Id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", phn='" + phn + '\'' +

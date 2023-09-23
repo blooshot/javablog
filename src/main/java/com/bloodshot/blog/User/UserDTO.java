@@ -1,4 +1,4 @@
-package User;
+package com.bloodshot.blog.User;
 
 import javax.persistence.Table;
 
