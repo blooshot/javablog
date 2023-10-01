@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+redis:
+  hostname: 127.0.0.1
+  port: 637998
+
+spring:
+#  datasource:
+#     url: jdbc:postgresql://localhost:5432/kblog
+#     username: bloguser
+#     password: bloguser
+#  jpa:
+#    properties:
+#       hibernate:
+#         dialect: org.hibernate.dialect.PostgreSQLDialect
+#         ddl-auto: update
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE

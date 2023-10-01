@@ -2,6 +2,7 @@ package com.bloodshot.blog.User;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +14,9 @@ public class UserServiceImpl implements UserService{
 
     @Autowired
     private UserRespository userRespository;
+
+//    @Autowired
+//    private RedisTemplate redisTemplate;
 
     @Override
     public List<Users> getAllUsers() {
